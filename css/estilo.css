@@ -1,0 +1,277 @@
+:root{
+    --while:#ffffff;
+    --black:#000000;
+    --very-light-pink:#c7c7c7;
+    --text-input-field:#ffffffe0;
+    --hospital-green:#d9ff00;
+    --sm: 14px;
+    --md:16px;
+    --lg:18px;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background: var(--black);
+  
+}
+
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.title{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+    color: var(--while);
+}
+
+.title-cuenta{
+    text-align: start;
+    margin-top: 1px;
+    color: var(--while);
+}
+
+.subtitle{
+    color: var(--while);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.email-image{
+    width: 132px;
+    height: 132px;
+    border-radius: 90%;
+    /*background: var(--text-input-field);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.email-image img{
+    width: 100px;
+}
+
+
+.reenviar{
+    font-size: var(--sm);
+}
+.reenviar span{
+    color: var(--very-light-pink); 
+}
+
+.reenviar a{
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--while);
+}
+
+
+
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: var(--md);
+    padding: 6px;
+}
+
+.inputall{
+    margin-bottom: 22px;
+}
+
+.input-email{
+    margin-bottom: 22px;
+}
+
+
+
+
+.primary-button{
+    background: var(--hospital-green);
+    border-radius: 8px;
+    border:none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.secondary-button{
+    background: var(--white);
+    border-radius: 8px;
+    border:1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    
+}
+
+.form-container-recu{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
+
+.logo{
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+
+}
+
+
+@media (max-width: 640px){
+    .logo{
+        display: block;
+    }
+    .secondary-button,
+    .login-button{
+        margin-top: 100px;
+    }
+   
+}
+
+
+/*estilos actualizar cuenta*/
+
+.button-actucuenta{
+    background: var(--hospital-green);
+    border-radius: 8px;
+    border:3px solid var(--hospital-green);
+    color: var(--black);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.value{
+    color:var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+/*estilos pagina principal*/
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px);
+
+
+}
+
+.product-card{
+    width: 240px;
+}
+
+.product-card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+}
+
+p{
+    color: white;
+}
+
+h2,h4{
+    color:#d9ff00;
+    margin-top: 0;
+}
+
+
+.datosconductor{
+    border: black 1px solid;
+    position: relative;
+    left: 112px;
+    top:-50px;
+    z-index: 2px;
+
+}
+p.datosconductor{
+    color: #ffffff;
+}
+
+.image-profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+
+.image-start{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border: black 1px solid;
+    position: relative;
+    left: 112px;
+    top:-60px;
+    z-index: 0;
+    object-fit: cover;
+    flex-direction: row;
+}
+
+.box{
+    display: flex;
+}
+
+.img-mapa{
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+img-correo{
+    text-align:center;
+    }
